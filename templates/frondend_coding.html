@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-------navbar------>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> FITNESS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#diet & exersice">Diet & Exersice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Contact</a>
+              </li>
+            </ul>
+            <a href="/login"> <button  class="btn p-2 my-lg-0 my-2">Login</button></a>
+        </div>
+      </nav>
+
+
+
+      <!-------Home------>
+
+      <section id="home">
+        <h1> PHYSICAL FITNESS</h1>
+        <div class="input-group m-4">
+          <input type="text" class="form-control" placeholder="Email Address">
+          <button class="btn signin">Get Started</button>
+        </div>
+      </section>
+
+      <!----About----->
+      
+
+      <section id="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+             <img src="{{ url_for('static', filename='logo.png') }}" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md col-12 p-lg-5 p-2">
+              <h1>ABOUT US</h1>
+              <p>Physical fitness is a state of being that reflects a person's ability to perform specific exercises or functions, and is related to present and future health outcomes. In the United States, serious efforts to assess the physical fitness of youth with a battery of tests began in the 19th century.
+                “one's ability to execute daily activities with optimal performance, endurance, and strength with the management of disease, fatigue, and stress and reduced sedentary behavior.” 
+                Eating a balanced diet and being physically fit are two important components of a sound body and mind. As our energy is sourced from a balanced plate of food, nutrition plays an essential role in our physical fitness too. Without nutritious food, physical fitness cannot be achieved. Food is the fuel of our body
+              </p>
+            </div>
+                  
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <section id="diet & exersice">
+        <div class="container m-5">
+        <h1 class="text-center my-5">DIET & EXERCISE</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='d&e.webp') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='weight gain.jpg') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='d1.jpg') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='healthy-weight-gain-diet-infographic.jpg') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='exe 1.jpg') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <div class="card";>
+              <img src="{{ url_for('static', filename='exe 2.jpg') }}" class="card-img-top">
+              <div class="card-body text-center">
+                <h5 class="card-title">Card title</h5>
+                <a href="#" class="btn signin">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <section id="contact">
+        <div class="container box">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+               <img src="{{ url_for('static', filename='download.jpg') }}">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <h1>CONTACT US</h1>
+              <form>
+                <input type="text" class="form-control"
+                placeholder="Enter your Name">
+                <input type="text" class="form-control"
+                placeholder="Enter your E mail">
+                <textarea class="form-control" 
+                  placeholder="Enter your Message"></textarea>
+                    <button class="btn sign in">Send Message</button>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+
+       </section>
+  
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
