@@ -9,9 +9,13 @@ app.secret_key = '123',  # <-- Comma added here to fix syntax error
 def connect_db():
     return sqlite3.connect('database.db')
 
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/frondend_coding')
 def frondend_coding():
